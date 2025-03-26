@@ -19,16 +19,18 @@
                 <th>Tên sản phẩm</th>
                 <th>Mô tả</th>
                 <th>Danh mục</th>
-                
+                <th>Giá</th>
                 <th>Số lượng tồn</th>
             </tr>
         </thead>
         <tbody>
-            <% categories.forEach(categorie => { %>
+            <% products.forEach(product => { %>
                 <tr>
-                    <td><%= categorie.id %></td>
-                    <td><%= categorie.name %></td>
-                    <td><%= categorie.description %></td>
+                    <td><%= product.id %></td>
+                    <td><%= product.name %></td>
+                    <td><%= product.description %></td>
+                    <td><%= product.price %> VNĐ</td>
+                    <td><%= product.stock %></td>
                 </tr>
             <% }); %>
         </tbody>
